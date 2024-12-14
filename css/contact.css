@@ -180,6 +180,8 @@
 @media(max-width: 450px) {
     .contact-form label:last-of-type {
         flex-direction: column-reverse !important;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         font-size: 13px !important;
     }
