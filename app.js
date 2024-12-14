@@ -1,3 +1,5 @@
+AOS.init()
+
 // video pause and play btn ------------------------------------------------------------------------
 const videos = document.querySelectorAll(".video")
 const playButtons = document.querySelectorAll(".playBtn")

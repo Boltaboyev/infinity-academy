@@ -62,7 +62,7 @@
 
 .about-info-title p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 28px;
     color: #bbb;
 }
 
@@ -88,27 +88,59 @@
     color: #ffffff70;
 }
 
+
 .about-info-btn {
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 13px 18px;
     background: transparent;
-    color: var(--text-gradient-start);
-    padding: 7px;
-    width: 50%;
-    border: 1px solid var(--border);
-    font-size: 20px;
-    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     cursor: pointer;
-    border-radius: 10px;
-    transition: .2s;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    transition: color .2s;
+    outline: none;
+    border: none;
 }
 
-.about-info-btn:hover {
-    background: var(--text-gradient-start);
-    color: var(--bg);
+.about-info-btn:before,
+.about-info-btn:after {
+    position: absolute;
+    content: "";
+    transition: all .25s;
 }
 
-.about-info-btn:active {
-    transform: scale(.98);
-    background: var(--border);
+.about-info-btn:before {
+    border-bottom: 2px solid var(--border);
+    border-left: 2px solid var(--border);
+    width: 10%;
+    height: 40%;
+    left: 0px;
+    bottom: 0px;
+}
+
+.about-info-btn:after {
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    width: 10%;
+    height: 40%;
+    top: 0px;
+    right: 0px;
+}
+
+.about-info-btn:hover:before {
+    width: 98%;
+    height: 97%;
+}
+
+.about-info-btn:hover:after {
+    width: 98%;
+    height: 97%;
 }
 
 @media (max-width: 1150px) {

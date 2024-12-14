@@ -56,7 +56,8 @@
 }
 
 
-.showcase-content button {
+/*  -------------------------------- */
+.showcase-content a {
     padding: 10px 15px;
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -66,20 +67,49 @@
     align-items: center;
     gap: 6px;
     cursor: pointer;
-    outline: none;
     font-weight: 500;
     font-size: 22px;
     color: #fff;
-    transition: color .2s;
+    transition: .2s;
+    overflow: hidden;
+    position: relative;
 }
 
-.showcase-content button:active {
-    transform: scale(.99);
+.showcase-content a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: var(--text-gradient-start);
 }
 
-.showcase-content button:hover {
-    color: var(--text-gradient-start);
+.showcase-content a:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: var(--border);
+    animation: shine 3s ease-in-out infinite;
 }
+
+
+@keyframes shine {
+    0% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+    81% {
+        transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* --------------------------------------- */
 
 .showcase-contact {
     display: flex;
@@ -88,10 +118,6 @@
     width: 100%;
     gap: 60px;
 }
-
-
-
-
 
 .showcase-contact .tel-number {
     display: flex;
@@ -186,7 +212,7 @@
         background-size: cover;
     }
 
-    .showcase-content button {
+    .showcase-content a {
         font-weight: 500;
         font-size: 18px;
     }
@@ -205,7 +231,7 @@
         font-size: 30px;
     }
 
-    .showcase-content button {
+    .showcase-content a {
         width: 100%;
     }
 

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,21 +23,21 @@
                 <!-- hamburger -->
                 <img src="./assets/svg/bars.svg" alt="" class="bar">
                 <!-- hamburger -->
-                <ul>
+                <ul data-aos="fade-up">
                     <li><a href="#!">Home</a></li>
-                    <li><a href="#!">About Us</a></li>
-                    <li><a href="#!">American Life</a></li>
-                    <li><a href="#!">Registration</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#american-life">American Life</a></li>
+                    <li><a href="#contact">Registration</a></li>
                 </ul>
 
-                <select name="" id="">
+                <select name="" id="" data-aos="fade-up">
                     <option value="EN">EN</option>
                     <option value="UZ">UZ</option>
                 </select>
             </nav>
 
             <section class="showcase">
-                <div class="showcase-content">
+                <div class="showcase-content" data-aos="fade-right">
                     <div class="showcase-content-text">
                         <h1>
                             Anything is possible with <span>IELTS! Don't miss</span> <span>the chance to turn
@@ -48,14 +51,13 @@
                         </div>
                     </div>
 
-                    <button>
+                    <a href="#contact">
                         Sign up for a trial lesson
-
                         <img src="./assets/svg/right-arrow.svg" alt="">
-                    </button>
+                    </a>
                 </div>
 
-                <div class="showcase-contact">
+                <div class="showcase-contact" data-aos="zoom-in">
                     <div class="tel-number">
                         <p>Call Us</p>
 
@@ -63,27 +65,27 @@
                     </div>
 
                     <div class="social-media">
-                        <a href="#!"><img src="./assets/svg/instagram.svg" alt=""></a>
-                        <a href="#!"><img src="./assets/svg/telegram.svg" alt=""></a>
-                        <a href="#!"><img src="./assets/svg/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/infinity_academy" target="_blank"><img src="./assets/svg/instagram.svg"
+                                alt=""></a>
+                        <a href="https://t.me/Infinity_Academy_TChIO" target="_blank"><img src="./assets/svg/telegram.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/company/infinity-academy" target="_blank"><img src="./assets/svg/linkedin.svg"
+                                alt=""></a>
                     </div>
                 </div>
 
             </section>
         </div>
 
-
-
         </div>
     </section>
     <!-- showcase and navbar -->
 
     <!-- About Me -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about-box">
                 <!-- video -->
-                <div class="about-video">
+                <div class="about-video" data-aos="flip-left">
                     <div class="playBtn" id="playBtn">
                         <img src="./assets/svg/play.svg" alt="">
                     </div>
@@ -95,7 +97,7 @@
                 <!-- video end -->
 
                 <!-- text content -->
-                <div class="about-info">
+                <div class="about-info" data-aos="fade-up">
 
                     <h1 class="bg-text">
                         About
@@ -158,7 +160,7 @@
     <!-- About Me -->
 
     <!-- videos -->
-    <section class="american-life">
+    <section class="american-life" id="american-life">
         <div class="container">
             <!-- circle blur -->
             <div class="bg-blur"></div>
@@ -177,7 +179,7 @@
 
                     <!-- 1 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -198,7 +200,7 @@
 
                     <!-- 2 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -219,7 +221,7 @@
 
                     <!-- 3 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -240,7 +242,7 @@
 
                     <!-- 4 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -261,7 +263,7 @@
 
                     <!-- 5 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -282,7 +284,7 @@
 
                     <!-- 6 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -303,7 +305,7 @@
 
                     <!-- 7 -->
                     <div class="swiper-slide">
-                        <div class="video-swiper">
+                        <div class="video-swiper" data-aos="flip-left">
                             <div class="america-video">
                                 <div id="playBtn" class="playBtn">
                                     <img src="./assets/svg/play.svg" alt="">
@@ -330,13 +332,13 @@
     <!-- videos -->
 
     <!-- contact form -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <!-- circle blur -->
             <div class="bg-blur"></div>
             <!-- circle blur -->
 
-            <div class="contact-title">
+            <div class="contact-title" data-aos="zoom-in">
                 <img src="./assets/img/logo.png" alt="">
 
                 <h1>
@@ -344,8 +346,8 @@
                 </h1>
             </div>
 
-            <div class="contact-box">
-                <form action="#!" class="contact-form">
+            <div class="contact-box" data-aos="zoom-in">
+                <form action="" class="contact-form">
                     <label for="fullName">
                         Surname and first name
                         <input type="text" id="fullName">
@@ -376,13 +378,15 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-social">
+            <div class="footer-social" data-aos="zoom-in">
                 <h1>Infinity <span>Academy</span></h1>
 
                 <div class="social-media">
-                    <a href="#!"><img src="./assets/svg/instagram.svg" alt=""></a>
-                    <a href="#!"><img src="./assets/svg/telegram.svg" alt=""></a>
-                    <a href="#!"><img src="./assets/svg/linkedin.svg" alt=""></a>
+                    <a href="https://www.instagram.com/infinity_academy" target="_blank"><img src="./assets/svg/instagram.svg"
+                            alt=""></a>
+                    <a href="https://t.me/Infinity_Academy_TChIO" target="_blank"><img src="./assets/svg/telegram.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/infinity-academy" target="_blank"><img src="./assets/svg/linkedin.svg"
+                            alt=""></a>
                 </div>
             </div>
         </div>
@@ -392,6 +396,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./app.js"></script>
 </body>
 
