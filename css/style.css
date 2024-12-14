@@ -1,0 +1,9 @@
+@import url(./global.css);
+
+/* components */
+@import url(./navbar.css);
+@import url(./showcase.css);
+@import url(./about.css);
+@import url(./americanLife.css);
+@import url(./contact.css);
+@import url(./footer.css);

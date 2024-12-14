@@ -1,0 +1,107 @@
+.american-life {
+    padding: 70px 0;
+    background: var(--bg);
+}
+
+.american-life > div {
+    position: relative;
+}
+
+.american-life .bg-blur {
+    right: 0;
+}
+
+.american-life-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.american-life-title h2 {
+    font-size: 55px;
+    color: var(--white);
+}
+
+.american-life-title .bg-text {
+    font-size: 130px;
+    top: -40px;
+}
+
+.america-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.america-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.america-video .playBtn {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    background: none;
+    user-select: none;
+}
+
+.video-swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video-swiper p {
+    color: #bbb;
+    text-align: center;
+    font-size: 14.5px;
+}
+
+@media (max-width: 750px) {
+    .american-life-title h2 {
+        font-size: 35px;
+    }
+
+    .american-life-title .bg-text {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .america-video {
+        height: 550px;
+    }
+}
+
+@media (max-width: 430px) {
+    .american-life-title .bg-text {
+        font-size: 80px;
+        top: -20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .american-life-title h2 {
+        font-size: 30px;
+    }
+
+    .american-life-title .bg-text {
+        font-size: 70px;
+        top: -20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .america-video {
+        height: auto;
+    }
+}

@@ -1,0 +1,31 @@
+.footer {
+    padding: 110px 0 50px 0;
+    background: var(--bg);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-social h1 {
+    font-weight: 700;
+    font-size: 38px;
+    color: #edc580;
+    max-width: 875px;
+}
+
+.footer-social h1 span {
+    background: linear-gradient(38deg, #edc580 50%, #fdf9f3 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width: 480px) {
+    .footer-social h1 {
+        font-size: 25px;
+    }
+}

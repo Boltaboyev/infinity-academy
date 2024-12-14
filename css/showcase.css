@@ -1,0 +1,219 @@
+.main {
+    background: var(--bg);
+    background-image: url('../assets/img/showcase.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 800px;
+    padding: 145px 0 30px 0;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.showcase-content-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.showcase-content-text h1 {
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--white);
+    max-width: 875px;
+}
+
+.showcase-content-text h1 span {
+    background: linear-gradient(38deg, #edc580 75%, #fdf9f3 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showcase-content-text h1 span:last-of-type {
+    font-size: 50px;
+}
+
+.showcase-logo {
+    position: absolute;
+    right: 135px;
+    bottom: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.showcase-content button {
+    padding: 10px 15px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    transition: color .2s;
+}
+
+.showcase-content button:active {
+    transform: scale(.99);
+}
+
+.showcase-content button:hover {
+    color: var(--text-gradient-start);
+}
+
+.showcase-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 60px;
+}
+
+
+
+
+
+.showcase-contact .tel-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.06em;
+    color: var(--white);
+}
+
+
+.showcase-contact .tel-number a {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: .2s;
+}
+
+.showcase-contact .tel-number a:hover {
+    color: var(--text-gradient-start);
+}
+
+@media (max-width:940px) {
+    .showcase-content-text {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .showcase-logo {
+        position: static;
+    }
+}
+
+@media (max-width: 840px) {
+    .showcase {
+        padding: 40px 0;
+        height: 600px;
+    }
+
+    .bg-blur {
+        height: 200px;
+        width: 200px;
+    }
+
+    .showcase-logo img {
+        width: 150px;
+    }
+
+    .showcase-content-text h1 {
+        font-size: 30px;
+    }
+
+    .showcase-content-text h1 span:last-of-type {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        background-position: 120%;
+    }
+
+    .showcase-logo img {
+        width: 100px;
+    }
+
+    .showcase-content-text h1 {
+        font-size: 24px;
+    }
+
+    .showcase-content-text h1 span:last-of-type {
+        font-size: 35px;
+    }
+
+    .showcase-contact {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .showcase-content button {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+    .showcase-logo {
+        align-self: center;
+    }
+
+    .showcase-content-text h1 {
+        font-size: 22px;
+    }
+
+    .showcase-content-text h1 span:last-of-type {
+        font-size: 30px;
+    }
+
+    .showcase-content button {
+        width: 100%;
+    }
+
+    .showcase-contact {
+        align-items: center;
+    }
+
+    .showcase-contact .tel-number p {
+        display: none;
+    }
+}
