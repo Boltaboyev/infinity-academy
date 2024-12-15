@@ -77,7 +77,7 @@
 
 .showcase-content a:hover {
     text-decoration: none;
-    color: #fff;
+    color: var(--bg);
     background: var(--text-gradient-start);
 }
 
@@ -114,7 +114,7 @@
 .showcase-contact {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     gap: 60px;
 }

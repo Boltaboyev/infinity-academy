@@ -16,7 +16,7 @@
 <body>
 
     <!-- showcase and navbar -->
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
 
             <nav class="navbar">
@@ -24,7 +24,7 @@
                 <img src="./assets/svg/bars.svg" alt="" class="bar">
                 <!-- hamburger -->
                 <ul data-aos="fade-up">
-                    <li><a href="#!">Home</a></li>
+                    <li><a href="#main">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#american-life">American Life</a></li>
                     <li><a href="#contact">Registration</a></li>
@@ -37,7 +37,7 @@
             </nav>
 
             <section class="showcase">
-                <div class="showcase-content" data-aos="fade-right">
+                <div class="showcase-content" data-aos="zoom-in">
                     <div class="showcase-content-text">
                         <h1>
                             Anything is possible with <span>IELTS! Don't miss</span> <span>the chance to turn
@@ -57,7 +57,7 @@
                     </a>
                 </div>
 
-                <div class="showcase-contact" data-aos="zoom-in">
+                <div class="showcase-contact" data-aos="fade-up">
                     <div class="tel-number">
                         <p>Call Us</p>
 
@@ -65,11 +65,12 @@
                     </div>
 
                     <div class="social-media">
-                        <a href="https://www.instagram.com/infinity_academy" target="_blank"><img src="./assets/svg/instagram.svg"
-                                alt=""></a>
-                        <a href="https://t.me/Infinity_Academy_TChIO" target="_blank"><img src="./assets/svg/telegram.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/company/infinity-academy" target="_blank"><img src="./assets/svg/linkedin.svg"
-                                alt=""></a>
+                        <a href="https://www.instagram.com/infinity_academy" target="_blank"><img
+                                src="./assets/svg/instagram.svg" alt=""></a>
+                        <a href="https://t.me/Infinity_Academy_TChIO" target="_blank"><img
+                                src="./assets/svg/telegram.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/company/infinity-academy" target="_blank"><img
+                                src="./assets/svg/linkedin.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -85,7 +86,7 @@
         <div class="container">
             <div class="about-box">
                 <!-- video -->
-                <div class="about-video" data-aos="flip-left">
+                <div class="about-video" data-aos="fade-right">
                     <div class="playBtn" id="playBtn">
                         <img src="./assets/svg/play.svg" alt="">
                     </div>
@@ -97,7 +98,7 @@
                 <!-- video end -->
 
                 <!-- text content -->
-                <div class="about-info" data-aos="fade-up">
+                <div class="about-info" data-aos="fade-left">
 
                     <h1 class="bg-text">
                         About
@@ -148,10 +149,65 @@
                         </p>
                     </div>
 
-                    <button class="about-info-btn">
+                    <button class="about-info-btn" id="open-popup">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         More Info
                     </button>
+                </div>
 
+                <!-- Popup container -->
+                <div id="popup" class="popup hidden">
+                    <div class="popup-content">
+                        <span id="close-popup" class="close">&times;</span>
+                        <div>
+                            <h2>Music Expertise</h2>
+                            
+                            <p>- 7 years of piano education</p>
+                            <p>- Participated in numerous concerts</p>
+                        </div>
+                        <div>
+                            <h2>Business Program</h2>
+                            <p>- Studying Business Administration and Management in Amsterdam, Netherlands</p>
+                        </div>
+                        <div>
+                            <h2>Teaching Experience</h2>
+                            <p>- Piano instructor at Uzbekistan State University of World Languages</p>
+                            <p>- Graduate Teaching Assistant at a U.S. university</p>
+                            <p>- Worked as a teacher at "Everest Academy" for over 2 years</p>
+                            <p>- Helped students achieve high IELTS scores and gain admission to top universities locally
+                            and internationally</p>
+                        </div>
+
+                        <div>
+                            <h2>IELTS Excellence</h2>
+                            <p>- Achieved scores of 7.0, 7.5, and 8.0</p>
+                        </div>
+                        <div>
+                            <h2>Language Proficiency</h2>
+                            <p>- Fluent in English, Russian, and German (B2 level)</p>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div>
+                            <h2>Academic Achievements</h2>
+                            <p>- Graduated from Tashkent State University of World Languages</p>
+                            <p>- Pursuing a master’s degree at a prestigious U.S. university</p>
+                            <p>- Completed "Korea Cultural Center" (TOPIC 2 level)</p>
+                        </div>
+                        <div>
+                            <h2>Current Goals</h2>
+                            <p>- Preparing for the GMAT exam</p>
+                        </div>
+                        <div>
+                            <h2>Infinity Academy Founder</h2>
+                            <p>- Established the academy to inspire and guide the next generation toward educational
+                            success</p>
+                        </div>
+                    </div>
                 </div>
                 <!-- text content end -->
             </div>
@@ -355,8 +411,13 @@
 
                     <label for="number">
                         Your phone number
-                        <input type="text" id="number" placeholder="+998">
+                        <div class="input-container">
+                            <span class="prefix">+998</span>
+                            <input type="text" class="input-field" maxlength="17" id="number">
+                        </div>
                     </label>
+
+
 
                     <label for="privacy" class="contact-form-checkbox">
                         <input type="checkbox" name="" id="privacy">
@@ -382,11 +443,12 @@
                 <h1>Infinity <span>Academy</span></h1>
 
                 <div class="social-media">
-                    <a href="https://www.instagram.com/infinity_academy" target="_blank"><img src="./assets/svg/instagram.svg"
+                    <a href="https://www.instagram.com/infinity_academy" target="_blank"><img
+                            src="./assets/svg/instagram.svg" alt=""></a>
+                    <a href="https://t.me/Infinity_Academy_TChIO" target="_blank"><img src="./assets/svg/telegram.svg"
                             alt=""></a>
-                    <a href="https://t.me/Infinity_Academy_TChIO" target="_blank"><img src="./assets/svg/telegram.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/company/infinity-academy" target="_blank"><img src="./assets/svg/linkedin.svg"
-                            alt=""></a>
+                    <a href="https://www.linkedin.com/company/infinity-academy" target="_blank"><img
+                            src="./assets/svg/linkedin.svg" alt=""></a>
                 </div>
             </div>
         </div>
